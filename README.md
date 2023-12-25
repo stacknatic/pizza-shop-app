@@ -1,3 +1,10 @@
-# Pizza delivery site
+# Pizza shop app created with JavaScript
 
-By Azam and Michael
+## How it works
+
+- Select pizza base 
+
+- Add toppings 
+
+- Selections are automatically displayed in the order summary column and price is automatically updated.
+
