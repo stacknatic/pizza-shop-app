@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Pizza</title>
+    <link rel="icon" type="image/x-icon" href="favico.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </header>
+    <h1>Yummy Pizza</h1>
+    <main>
+        <div class="main">
+            <section>
+                <div class="pizza-card">
+                    <div class="pizza-card-inner">
+                        <div class="pizza-card-front">
+                            <p class="view-base-prices">👉 View base prices</p>
+                            <figure>
+                                <!-- <img class="featured-image" src="pizza.jpg" alt=""> -->
+                                <figcaption>Photo by Saahil Khatkhate on Unsplash</figcaption> 
+
+                            
+                            </figure>
+                        </div>
+                        <div class="pizza-card-back">
+                            <h2>Base prices</h2>
+                            <ol class="align-center prices">
+                                <li>Size 2: €7.50</li>
+                                <li>Size 4: €10.50</li>
+                                <li>Size 6: €12.50</li>
+                                <li>Size 8: €15.50</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+                <h2 class="heading-padding">Create your perfect pizza</h2> 
+                <form class="order-form">
+                    <fieldset>
+                        <legend>Order form</legend>
+
+                        <label class="text-input" for="cname">Name</label>
+                        <input class="text-input" type="text" id="cname">
+                        <!-- <label class="text-input" for="lname">Last name</label>
+                        <input class="text-input" type="text" id="lname"> -->
+                        <p class="align-center pizza-options">Select pizza size: </p>
+                        <label class="radio" for="size2">Size 2 (€7.50)</label>
+                        <input class="radio" type="radio" name="size" id="size2" value="7.50" size="2">
+                        <label class="radio" for="size4">Size 4 (€10.50)</label>
+                        <input class="radio" type="radio" name="size" id="size4" value="10.50" size="4">
+                        <label  class="radio" for="size6">Size 6 (€12.50)</label>
+                        <input class="radio" type="radio" name="size" id="size6" value="12.50" size="6"> 
+                        <label class="radio" for="size8">Size 8  (€15.50)</label>
+                        <input class="radio" type="radio" name="size" id="size8" value="15.50" size="8">
+                        
+                        <p class="align-center pizza-options">Choose toppings (first four toppings are free. Additional toppings cost €0.50 each):</p>
+                        <label class="topping-checkboxes" for="blue-cheese">Blue cheese</label>
+                        <input class="topping-checkboxes" type="checkbox" name="blue-cheese" id="blue-cheese">
+                        
+                        <label class="topping-checkboxes" for="prawn">Prawn</label>
+                        <input class="topping-checkboxes" type="checkbox" name="prawn" id="prawn">
+                        
+                        <label class="topping-checkboxes" for="pepperoni">Pepperoni</label>
+                        <input class="topping-checkboxes" type="checkbox" name="pepperoni" id="pepperoni">
+                        
+                        <label class="topping-checkboxes" for="chicken">Chicken</label>
+                        <input class="topping-checkboxes" type="checkbox" name="chicken" id="chicken">
+                        
+                        <label class="topping-checkboxes" for="beef">Beef</label>
+                        <input class="topping-checkboxes" type="checkbox" name="beef" id="beef">
+                        
+                        <label class="topping-checkboxes" for="ham">Ham</label>
+                        <input class="topping-checkboxes" type="checkbox" name="ham" id="ham">
+                        
+                        <label class="topping-checkboxes" for="feta">Feta cheese</label>
+                        <input class="topping-checkboxes" type="checkbox" name="feta" id="feta">
+                        
+                        <label class="topping-checkboxes" for="mozzarela">Mozzarela</label>
+                        <input class="topping-checkboxes" type="checkbox" name="mozzarela" id="mozzarela">
+                        
+                        <label class="topping-checkboxes" for="jalapeno">Jalapeno</label>
+                        <input class="topping-checkboxes" type="checkbox" name="jalapeno" id="jalapeno">
+                        
+                        <label class="topping-checkboxes" for="mushroom">Mushroom</label>
+                        <input class="topping-checkboxes" type="checkbox" name="mushroom" id="mushroom">
+                        
+                        <p class="pizza-options">Select delivery option:</p>
+                        <select class="delivery-options" name="delivery" id="delivery">
+                            <option value="home delivery">home delivery</option>
+                            <option value="pick-up">Pick-up</option>
+                            <option value="eat-in">Eat in</option>
+                        </select>
+                        
+                        <div class="delivery-add">
+                            
+                            <p>
+                                Add address
+
+                            </p> 
+
+                            <textarea name="delivery-address" id="delivery-address" cols="30" rows="10">
+                            </textarea>
+                        </div>    
+                    </fieldset>
+                </form> 
+
+
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <section class="order-summary align-center">
+                <h2>Order summary</h2>
+                <div class="summary-info customer"></div>
+                <div class="summary-info pizza-size"></div>
+                <div class="summary-info toppings-heading"></div>
+                <div class="summary-info pizza-toppings">
+                    <ul id="toppings-list">
+                       
+
+                    </ul>
+                </div>
+                <div class="summary-info delivery-method"></div>
+                <div class="summary-info" id="total-price"></div>
+
+                <div class="summary-info" id="deliver-to"> </div>
+
+               
+
+                
+
+    
+            </section>
+        </div>
+    </main>
+    <footer>copyright &#169; 2023 Yummy Pizza</footer>
+    <script src="main.js"></script>
+</body>
+</html>
